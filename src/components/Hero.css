@@ -139,7 +139,7 @@
   }
 
   .hero__bottom {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .hero__name {
@@ -147,11 +147,11 @@
   }
 
   .hero__name-block {
-    text-align: left;
+    text-align: right;
   }
 
   .hero__sub--right {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   .hero__scroll {
