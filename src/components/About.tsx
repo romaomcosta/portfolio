@@ -16,7 +16,7 @@ const About = () => {
         <p>
           I'm a software engineer with a Master's degree in Computer Science
           from NOVA SST. I work at the intersection of distributed systems,
-          event-driven architecture, and cloud infrastructure — designing
+          event-driven architecture, and cloud infrastructure . Designing
           services that are reliable, scalable, and built to last.
         </p>
         <p>
