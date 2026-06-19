@@ -120,7 +120,17 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 90px 24px 60px;
+    padding: 80px 24px 40px;
+    gap: 0;
+  }
+
+  .hero__top {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hero__role {
+    font-size: clamp(2.8rem, 12vw, 4rem);
   }
 
   .hero__photo img {
@@ -129,9 +139,11 @@
   }
 
   .hero__bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  .hero__name {
+    font-size: clamp(2.8rem, 12vw, 4rem);
   }
 
   .hero__name-block {
@@ -143,7 +155,6 @@
   }
 
   .hero__scroll {
-    left: 24px;
-    bottom: 20px;
+    display: none;
   }
 }
