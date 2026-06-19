@@ -1,0 +1,149 @@
+.hero {
+  min-height: 100vh;
+  padding: 100px 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--color-bg);
+}
+
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero__top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__role {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+}
+
+.hero__photo img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hero__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero__sub {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: var(--color-gray);
+}
+
+.hero__sub--right {
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.hero__dash {
+  color: var(--color-accent);
+}
+
+.hero__available {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__available-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.hero__name-block {
+  text-align: right;
+}
+
+.hero__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  color: var(--color-white);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-gray);
+}
+
+.hero__scroll-text {
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: var(--color-gray);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 90px 24px 60px;
+  }
+
+  .hero__photo img {
+    width: 140px;
+    height: 160px;
+  }
+
+  .hero__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .hero__name-block {
+    text-align: left;
+  }
+
+  .hero__sub--right {
+    justify-content: flex-start;
+  }
+
+  .hero__scroll {
+    left: 24px;
+    bottom: 20px;
+  }
+}
